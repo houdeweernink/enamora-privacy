@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enamora Labs Privacy Policy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #EFF2EE;
+    --surface: #FFFFFF;
+    --ink: #1C2321;
+    --ink-soft: #57625B;
+    --ink-faint: #869088;
+    --accent: #7C3F5E;
+    --accent-soft: #F4E7EE;
+    --border: #DCE2DA;
+    --swatch-1: #C97B84;
+    --swatch-2: #C99A3B;
+    --swatch-3: #7A8B6F;
+    --swatch-4: #3B4A73;
+    --swatch-5: #7C3F5E;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181A;
+      --surface: #1B2123;
+      --ink: #E8ECE9;
+      --ink-soft: #AEB8B1;
+      --ink-faint: #7C877F;
+      --accent: #E39FBE;
+      --accent-soft: #2B2027;
+      --border: #2A3230;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #14181A;
+    --surface: #1B2123;
+    --ink: #E8ECE9;
+    --ink-soft: #AEB8B1;
+    --ink-faint: #7C877F;
+    --accent: #E39FBE;
+    --accent-soft: #2B2027;
+    --border: #2A3230;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Sans 3', -apple-system, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .swatches { display: flex; gap: 6px; margin-bottom: 28px; }
+  .swatches span { width: 20px; height: 20px; border-radius: 50%; display: inline-block; }
+  .swatches span:nth-child(1) { background: var(--swatch-1); }
+  .swatches span:nth-child(2) { background: var(--swatch-2); }
+  .swatches span:nth-child(3) { background: var(--swatch-3); }
+  .swatches span:nth-child(4) { background: var(--swatch-4); }
+  .swatches span:nth-child(5) { background: var(--swatch-5); }
+
+  .brand {
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 6px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(2rem, 5vw, 2.6rem);
+    line-height: 1.15;
+    margin: 0 0 12px;
+  }
+
+  .meta { color: var(--ink-faint); font-size: 0.9rem; margin: 0 0 48px; }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); max-width: 56ch; margin: 0 0 56px; }
+
+  section { padding: 32px 0; border-top: 1px solid var(--border); }
+  section:first-of-type { border-top: none; padding-top: 0; }
+
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0 0 16px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  h2 .num { font-size: 0.8rem; font-weight: 600; color: var(--accent); letter-spacing: 0.04em; }
+
+  p { margin: 0 0 14px; max-width: 66ch; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 14px; padding-left: 1.25em; max-width: 64ch; }
+  li { margin-bottom: 8px; }
+  li:last-child { margin-bottom: 0; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 4px;
+  }
+  .term { color: var(--ink); font-weight: 600; }
+
+  a { color: var(--accent); text-decoration-color: var(--accent-soft); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent); }
+
+  .contact { background: var(--accent-soft); border-radius: 10px; padding: 24px; margin-top: 4px; }
+  .contact p { margin-bottom: 4px; }
+  .contact .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--ink-faint);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="swatches" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <p class="brand">Enamora Labs</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Applies to the Pinterest content-automation tool · Last updated September 2026</p>
+
+  <p class="lede">
+    Enamora Labs is a one-person software studio run by Hans Oudeweernink. This page explains what
+    one of its internal tools — used to publish pins to a single Pinterest account — does with data,
+    in plain terms.
+  </p>
+
+  <section>
+    <h2><span class="num">01</span>Who runs this</h2>
+    <p>
+      Enamora Labs is the name under which Hans Oudeweernink builds personal tools. There is no
+      separate company entity behind it — it's a sole proprietorship. This particular tool manages
+      the Pinterest presence of I Love Colors Art, an Etsy shop also run by Hans.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>What the tool does</h2>
+    <p>
+      The tool is a desktop application that runs on my own computer. It reads artwork mockups and
+      listing details I've already prepared, generates a title, description, and search-relevant
+      keywords for each one, and publishes the result as a Pin to my own Pinterest boards, linking
+      back to my own Etsy listings.
+    </p>
+    <p>
+      It has exactly one user: me. It is not distributed, not offered as a service, and does not
+      act on behalf of anyone else's Pinterest account.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Information it processes</h2>
+    <div class="card">
+      <ul>
+        <li><span class="term">Pinterest access token</span> — issued via Pinterest's own OAuth login, stored encrypted on my own device only.</li>
+        <li><span class="term">Artwork images and mockups</span> — my own files, prepared before the tool ever runs.</li>
+        <li><span class="term">Etsy listing text and links</span> — my own shop data, entered by me.</li>
+        <li><span class="term">Generated pin text</span> — titles, descriptions and keywords produced from the above, optionally with help from a third-party AI text service (see below).</li>
+      </ul>
+    </div>
+    <p style="margin-top:14px">
+      The tool does not read, collect, or store data belonging to other Pinterest users, pinners,
+      or boards. It only writes to my own account.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Third-party services involved</h2>
+    <p>Two outside services are called while the tool runs, and only for the purpose stated:</p>
+    <ul>
+      <li><span class="term">Pinterest API</span> — to publish pins and read my own board list. Governed by Pinterest's own privacy policy.</li>
+      <li><span class="term">An AI text-generation provider</span> (Anthropic or OpenAI, configurable) — receives the artwork image and listing text to draft a pin title and description. It does not receive my Pinterest credentials.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>What isn't collected</h2>
+    <p>
+      No cookies, no analytics, no tracking of any kind. Nothing is sold, rented, or shared beyond
+      the two services named above. There is no server this tool reports back to — the token and
+      logs stay on my own machine.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>Questions</h2>
+    <div class="contact">
+      <p class="label">Contact</p>
+      <p>Hans Oudeweernink — Enamora Labs</p>
+      <p><a href="mailto:h.oudeweernink@gmail.com">h.oudeweernink@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    This policy covers only the Pinterest automation tool described above. My Etsy shop itself is
+    additionally governed by Etsy's own privacy policy and terms.
+  </footer>
+</div>
+</body>
+</html>
